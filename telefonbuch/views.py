@@ -9,3 +9,6 @@ def hello(request):
 def eintraege(request):
     eintraege = TelefonbuchEintrag.objects.all()
     return render(request,'eintraege.html',context= {'eintraege': eintraege})
+
+def test():
+    return "test"
